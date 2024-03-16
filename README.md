@@ -123,27 +123,34 @@ Build machine learning model to predict wine quality based on its chemical compo
 
  4.4 Tensoflow neural network
      Tensoflow is an open-source machine learning library used for deep learning neural network models. 
-    
+     The target variable y has integer values that represent different categories.
 
+     ![image](https://github.com/sookie22/Final_Project/assets/10916160/a3addbce-d66a-4eee-b74b-a6bbcde3610c)   
 
-   
+     This should be converted to a matrix.
+     ![image](https://github.com/sookie22/Final_Project/assets/10916160/15862f4b-b20b-4eff-9b5f-5c6a64988120)  
 
+     Tensorflow layers are defined as follows.
 
+     ![image](https://github.com/sookie22/Final_Project/assets/10916160/961f02d6-a449-4242-ac05-7ad6c672909d)  
 
-   
+     Accuracy is 60%
+     ![image](https://github.com/sookie22/Final_Project/assets/10916160/c1d0c013-16b9-4431-9648-607a6f67c83e)  
 
+4.4.1 Optimization 1
+     The loss function is changed to mean squared error.
 
+     ![image](https://github.com/sookie22/Final_Project/assets/10916160/79415653-acdc-4f88-9f69-6510c3a07e78)  
 
+     Accuracy is reduced to 57.9%
 
-      
+     ![image](https://github.com/sookie22/Final_Project/assets/10916160/fc597fae-aaba-4b30-8c7d-d90cd5fc3914)  
+     
 
 
 ## Summary  
 
 ![image](https://github.com/sookie22/Final_Project/assets/10916160/a0e2ae05-0d64-4761-87f4-0dd752728680)  
-
-
-
 
 ## Conclusion   
 Decision tree with narrow classification has best accuracy followed by Random forest model with gridsearch classifier. 
