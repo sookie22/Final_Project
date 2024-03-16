@@ -71,11 +71,13 @@ Build machine learning model to predict wine quality based on its chemical compo
       It is simple to implement and easier to interpret the output coefficients.
       For the first model, quality has been converted to category type assuming wine quality id good when quality rating is between 6-8 and bad when quality rating is below 6.    
 
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/6ab3de2f-2847-4279-a57c-288ba5687c33)   
+      ![image](https://github.com/sookie22/Final_Project/assets/10916160/d46f81c1-ae50-488d-94f8-5f231a49b06d)  
+ 
 
       The accuracy of this model is 74%   
    
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/e58f6dda-05b7-41f6-bd26-42614a24a27a)   
+      ![image](https://github.com/sookie22/Final_Project/assets/10916160/a41d6001-b826-4ba9-8967-0154df7a3a99)  
+  
 
       ????   
 
@@ -137,7 +139,9 @@ Build machine learning model to predict wine quality based on its chemical compo
 
 
 ## Summary  
-![image](https://github.com/sookie22/Final_Project/assets/10916160/26d2d4d4-00c4-4ea5-86ba-d9581e37d278)  
+
+![image](https://github.com/sookie22/Final_Project/assets/10916160/a0e2ae05-0d64-4761-87f4-0dd752728680)  
+
 
 
 
