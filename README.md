@@ -32,9 +32,9 @@ Build machine learning model to predict wine quality based on its chemical compo
   2.2 Check correlations of all features.
       From this matrix we can see that pH, fixed acidity, citric acid and density are highly correlated.
       Total sulfur dioxide and free sulfur dioxide and very highly correlated.
-      These highly correlated columns can be used for dimension reduction to fine tune accuracy.
+      These highly correlated columns can be used for dimension reduction to fine tune accuracy.  
    
-   ![image](https://github.com/sookie22/Final_Project/assets/10916160/1d9baa70-d2b1-49e6-85c9-c6400222dcad)
+   ![image](https://github.com/sookie22/Final_Project/assets/10916160/1d9baa70-d2b1-49e6-85c9-c6400222dcad) 
    
 
 4. Normalize and standardise dataframe.  
@@ -42,28 +42,28 @@ Build machine learning model to predict wine quality based on its chemical compo
   4.1 Random forest model.  
       Random forest is very versatilite machine learning model. It can be used for both regression and classification tasks, and it's also easy to view the relative importance it assigns to the input features.
       It has easy-to-understand hyperparameters and classifier doesn't overfit with enough trees.
-      Alcohol quality depends on 11 input features. But which features are dominant in deciding wine quality is as follows.
+      Alcohol quality depends on 11 input features. But which features are dominant in deciding wine quality is as follows.  
 
       ![image](https://github.com/sookie22/Final_Project/assets/10916160/82c7c6da-83da-4089-930c-a551c6b33373)
 
-      This model uses test_size 0.25. The accuracy of this model is 72%
+      This model uses test_size 0.25. The accuracy of this model is 72%  
       ![image](https://github.com/sookie22/Final_Project/assets/10916160/10031233-48d6-41b0-847d-6e99702107e3)  
 
 
    4.1.1 Optimization 1  
-      The test size has been reduced to 0.2. The accuracy has increased to 74%.
+      The test size has been reduced to 0.2. The accuracy has increased to 74%.  
 
       ![image](https://github.com/sookie22/Final_Project/assets/10916160/59c9b8e0-0cc1-42df-9b94-f99b95708f5f)  
 
    4.1.2 Optimization 2  
       Gridsearch classifier is used to improve the accuracy. GridSearchCV is the process of performing hyperparameter tuning in order to determine the optimal values for a given model.
-      Parameter grid for the classifier is defined as follows.
+      Parameter grid for the classifier is defined as follows.   
 
-![image](https://github.com/sookie22/Final_Project/assets/10916160/48990eb4-af86-404f-98fa-92436fee3acd)
+      ![image](https://github.com/sookie22/Final_Project/assets/10916160/48990eb4-af86-404f-98fa-92436fee3acd)
 
-      Accuracy is significantly improved to 82%.
+      Accuracy is significantly improved to 82%.    
    
-![image](https://github.com/sookie22/Final_Project/assets/10916160/eafae585-176d-4db5-b8ca-218c01a53f6c)  
+      ![image](https://github.com/sookie22/Final_Project/assets/10916160/eafae585-176d-4db5-b8ca-218c01a53f6c)  
 
    
   4.2 Linear regression  
