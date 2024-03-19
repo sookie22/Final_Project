@@ -79,7 +79,8 @@ Precision-Recall Curve
  4.3.1 Optimization 1  
     Our second optimization involved hyperparameter tuning using GridSearchCV to optimize model performance. 
     By fine-tuning parameters like 'max_depth', 'min_samples_leaf', and 'min_samples_split', we aimed to improve the model's ability to generalize to unseen data. 
-    However, despite our efforts, the accuracy slightly reduced from 75.31% to 73% on the test set. 
+    However, despite our efforts, the accuracy slightly reduced from 75.31% to 73% on the test set.
+    
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/448b4bd8-d25f-40f5-b2a8-7d5be848887f)    
 
  4.3.2 Optimization 2   
@@ -87,7 +88,6 @@ Precision-Recall Curve
     This refinement led to an accuracy increase of 87.19% on the test set.
     While the 87.19% accuracy is promising, it's important to recognize that oversimplified classifications may hinder informed decision-making, potentially affecting industry practices. 
     Thus, we should consider the initial accuracy of 75.31% as a valuable reference point for Decision Tree optimization at this stage.
-  ![image](https://github.com/sookie22/Final_Project/assets/145446182/303031ad-01e7-4d9f-9db6-6fc676709125)     
 
     ROC Curve
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/738ed564-79ab-4948-a588-5e2b94d958e5)    
