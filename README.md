@@ -108,7 +108,7 @@ The accuracy is 0. This model fails 100% to predict wine quality. The loss funct
 
 ![image](https://github.com/sookie22/Final_Project/assets/10916160/3d2ba24c-80b5-4970-9e22-7bf91947f1bc)
 
-Optimization 1
+Optimization 1  
 The loss function and metric are changed to mean absolute error, which is more suitable for regression type models.
 
 ![image](https://github.com/sookie22/Final_Project/assets/10916160/b9472974-280d-4abc-a096-9d7ddb664e4e)
