@@ -37,8 +37,8 @@ Build machine learning model to predict wine quality based on its chemical compo
    ![image](https://github.com/sookie22/Final_Project/assets/10916160/1d9baa70-d2b1-49e6-85c9-c6400222dcad) 
    
 
-4. Normalize and standardise dataframe.  
-5. Apply machine learning models.  
+3. Normalize and standardise dataframe.  
+4. Apply machine learning models.  
   4.1 Random forest model.  
       Random forest is very versatilite machine learning model. It can be used for both regression and classification tasks, and it's also easy to view the relative importance it assigns to the input features.
       It has easy-to-understand hyperparameters and classifier doesn't overfit with enough trees.
@@ -66,60 +66,55 @@ Build machine learning model to predict wine quality based on its chemical compo
       ![image](https://github.com/sookie22/Final_Project/assets/10916160/eafae585-176d-4db5-b8ca-218c01a53f6c)  
 
    
-  4.2 Linear regression  
+  4.2 Linear regression vs. logistic regression 
+    4.2.1 Linear Regression
       Linear regression is a statistical modeling process that compares the relationship between two variables, which are usually independent or explanatory variables and dependent variables.
       It is simple to implement and easier to interpret the output coefficients.
       For the first model, quality has been converted to category type assuming wine quality id good when quality rating is between 6-8 and bad when quality rating is below 6.    
-
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/d46f81c1-ae50-488d-94f8-5f231a49b06d)  
+      R-squared: 0.4032
+      ![image](https://github.com/sookie22/Final_Project/assets/145446182/d28cb3bb-3cd1-475d-9d6c-27bc580822fc)  
  
-
-      The accuracy of this model is 74%   
-   
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/a41d6001-b826-4ba9-8967-0154df7a3a99)  
+    4.2.2 Optimization: Utilize categorization Good (6 and above) and Bad (below 6)
+      The accuracy of this model is 74%
+  ![image](https://github.com/sookie22/Final_Project/assets/145446182/15ea3b12-1d2b-4b14-ae62-37cc388a7ef5)  
   
 
-      ????   
+      ROC Curve
+  ![image](https://github.com/sookie22/Final_Project/assets/145446182/c876a80d-51d2-4434-8b1f-1cfd8d81164e)   
 
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/f29496d2-0395-4907-a27a-4db6f1a96c04)   
-
-      ?????   
-
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/aaa6f65d-425a-4588-bb31-be182384fa91)   
+      Precision-Recall Curve  
+  ![image](https://github.com/sookie22/Final_Project/assets/145446182/f9e10cf9-083a-4f0c-b2e8-a2ec7a90ef71)   
 
   4.3 Decision Tree  
-      Decision tree is a non-parametric supervised learning algorithm and is hierarchical in structure. Like a tree, it has root nodes, branches, internal nodes, and leaf nodes.
-      It divides the data space into sections, and producing decision rules that help in coming up with a prediction or a label. Decision trees are good for non linear predictions.
+    4.3.1 Optimization: with categorization (Remove the least important feature)
+    For our first optimization, we categorized wine quality into 'good' (quality ≥ 6) and 'bad' (quality < 6) categories. We removed the least important feature, free sulfur dioxide, to simplify the model's decision-making process and focus on attributes with higher significance. 
+    This enhanced interpretability and prediction accuracy by reducing noise. The model achieved an initial accuracy of 75.31% on the test set.
+  ![image](https://github.com/sookie22/Final_Project/assets/145446182/b7790dda-96bb-49da-b29e-540fa132e521)      
 
-      For this model, two least important features in the input dataset have been removed.   
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/7531d212-0376-4a6d-8c2d-c15fd2f05ca8)   
+      ROC Curve 
+  ![image](https://github.com/sookie22/Final_Project/assets/145446182/8a8df245-4d76-4867-9daf-bcc7847aa21c)   
 
-      Accuracy of prediction has improved to 75.3%   
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/56285a15-0c63-4536-b372-3d22ac787bd0)   
-
-      ?????   
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/5b75be2e-be63-40db-8dd5-52e3ca5b49cb)   
-
-      ??????   
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/be04e066-b181-4b94-8fc4-2adab8c1717f)    
+      Precision-Recall Curve 
+  ![image](https://github.com/sookie22/Final_Project/assets/145446182/a0c104c4-8eea-4789-8975-19dd36b7cbf4)    
 
  4.3.1 Optimization 1  
-      Hyperparameter tuning is applied to the model. Following param grid is used.   
-
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/d7b48305-9da4-4efd-a201-98570b8556bb)    
-
-      Accuracy is reduced to 73%.   
-
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/5ac9c2a7-1d2f-4d54-b752-8fae827d6bf7)    
+    Our second optimization involved hyperparameter tuning using GridSearchCV to optimize model performance. 
+    By fine-tuning parameters like 'max_depth', 'min_samples_leaf', and 'min_samples_split', we aimed to improve the model's ability to generalize to unseen data. 
+    However, despite our efforts, the accuracy slightly reduced from 75.31% to 73% on the test set. 
+  ![image](https://github.com/sookie22/Final_Project/assets/145446182/448b4bd8-d25f-40f5-b2a8-7d5be848887f)    
 
  4.3.2 Optimization 2   
-      Wine quality has been converted to category type assuming wine quality id good when quality rating is over 7 and bad when quality rating is below 7. This is very narrow classification.
+    For the third optimization, we refined the classification to distinguish 'good' wines (quality ≥ 7) and 'bad' wines (quality < 6), focusing on wines with quality ratings above and below 7. 
+    This refinement led to an accuracy increase of 87.19% on the test set.
+    While the 87.19% accuracy is promising, it's important to recognize that oversimplified classifications may hinder informed decision-making, potentially affecting industry practices. 
+    Thus, we should consider the initial accuracy of 75.31% as a valuable reference point for Decision Tree optimization at this stage.
+  ![image](https://github.com/sookie22/Final_Project/assets/145446182/303031ad-01e7-4d9f-9db6-6fc676709125)     
 
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/abcc5b79-4d34-44fc-8025-97baae005388)     
+    ROC Curve
+  ![image](https://github.com/sookie22/Final_Project/assets/145446182/738ed564-79ab-4948-a588-5e2b94d958e5)    
 
-      Accuracy has improved drastically to 87.2%   
-
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/2093e4fb-af5c-4dac-8246-a9aa068a3966)    
+    Precision-Recall Curve
+  ![image](https://github.com/sookie22/Final_Project/assets/145446182/af558790-a313-4c4c-a1b8-68e2dfbde3a0)
 
  4.4 Tensoflow neural network   
      Tensoflow is an open-source machine learning library used for deep learning neural network models. 
