@@ -66,13 +66,13 @@ Precision-Recall Curve
     For our first optimization, we categorized wine quality into 'good' (quality ≥ 6) and 'bad' (quality < 6) categories. We removed the least important feature, free sulfur dioxide, to simplify the model's decision-making process and focus on attributes with higher significance. 
     This enhanced interpretability and prediction accuracy by reducing noise. The model achieved an initial accuracy of 75.31% on the test set.
     
-  ![image](https://github.com/sookie22/Final_Project/assets/145446182/b7790dda-96bb-49da-b29e-540fa132e521)      
+![image](https://github.com/sookie22/Final_Project/assets/145446182/b7790dda-96bb-49da-b29e-540fa132e521)      
 
-  ROC Curve
+ROC Curve
   
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/8a8df245-4d76-4867-9daf-bcc7847aa21c)   
 
-  Precesion-Recall Curve
+Precesion-Recall Curve
   
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/a0c104c4-8eea-4789-8975-19dd36b7cbf4)    
 
