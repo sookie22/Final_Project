@@ -95,10 +95,10 @@ Precision-Recall Curve
   Precision-Recall Curve
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/af558790-a313-4c4c-a1b8-68e2dfbde3a0)
 
- 4.4 Tensoflow neural network   
+4.4 Tensoflow neural network   
 
-    Tensoflow is an open-source machine learning library used for deep learning neural network models. 
-    The target variable y has integer values that represent different categories.
+Tensoflow is an open-source machine learning library used for deep learning neural network models. 
+The target variable y has integer values that represent different categories.
 
 ![image](https://github.com/sookie22/Final_Project/assets/10916160/a3addbce-d66a-4eee-b74b-a6bbcde3610c)   
 
