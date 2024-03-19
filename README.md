@@ -55,7 +55,7 @@ Linear regression is a statistical modeling process that compares the relationsh
 ROC Curve
 ![image](https://github.com/sookie22/Final_Project/assets/143486132/f75d1129-7de5-46a6-aaa6-ac01ddb04ff4)
 
-      Precision-Recall Curve  
+Precision-Recall Curve  
 ![image](https://github.com/sookie22/Final_Project/assets/143486132/e4d79cc9-a9c1-4513-9976-9527e5de84b3)
 
 
