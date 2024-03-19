@@ -100,29 +100,22 @@ Precision-Recall Curve
 Tensoflow is an open-source machine learning library used for deep learning neural network models. 
 The target variable y has integer values that represent different categories.
 
-![image](https://github.com/sookie22/Final_Project/assets/10916160/a3addbce-d66a-4eee-b74b-a6bbcde3610c)   
+Neural network model is defined as follows.  
 
-This should be converted to a matrix.
+![image](https://github.com/sookie22/Final_Project/assets/10916160/ece58467-e11e-4483-848d-2c729f15dfd4)  
 
-![image](https://github.com/sookie22/Final_Project/assets/10916160/15862f4b-b20b-4eff-9b5f-5c6a64988120)  
+The accuracy is 0. This model fails 100% to predict wine quality. The loss function binary cross-entropy is used for binary classification. wine quality is range of values from 1 to 10.
 
-Tensorflow layers are defined as follows.
+![image](https://github.com/sookie22/Final_Project/assets/10916160/3d2ba24c-80b5-4970-9e22-7bf91947f1bc)
 
-![image](https://github.com/sookie22/Final_Project/assets/10916160/961f02d6-a449-4242-ac05-7ad6c672909d)  
+Optimization 1
+The loss function and metric are changed to mean absolute error, which is more suitable for regression type models.
 
-Accuracy is 60%
-![image](https://github.com/sookie22/Final_Project/assets/10916160/c1d0c013-16b9-4431-9648-607a6f67c83e)  
+![image](https://github.com/sookie22/Final_Project/assets/10916160/b9472974-280d-4abc-a096-9d7ddb664e4e)
 
-4.4.1 Optimization 1   
+The MAE for training data set is 0.5. This means that predicted wine quality can be +/- 0.5 range of actual wine quality.
+![image](https://github.com/sookie22/Final_Project/assets/10916160/b0a2695a-1679-4111-abb6-a9c62aaff2af)
 
-The loss function is changed to mean squared error.
-
-![image](https://github.com/sookie22/Final_Project/assets/10916160/79415653-acdc-4f88-9f69-6510c3a07e78)  
-
-Accuracy is reduced to 57.9%
-
-![image](https://github.com/sookie22/Final_Project/assets/10916160/fc597fae-aaba-4b30-8c7d-d90cd5fc3914)  
-     
 
 
 ## Summary  
