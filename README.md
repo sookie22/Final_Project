@@ -91,10 +91,10 @@ Build machine learning model to predict wine quality based on its chemical compo
     This enhanced interpretability and prediction accuracy by reducing noise. The model achieved an initial accuracy of 75.31% on the test set.
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/b7790dda-96bb-49da-b29e-540fa132e521)      
 
-      ROC Curve 
+      ROC Curve
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/8a8df245-4d76-4867-9daf-bcc7847aa21c)   
 
-      Precision-Recall Curve 
+      Precesion-Recall Curve
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/a0c104c4-8eea-4789-8975-19dd36b7cbf4)    
 
  4.3.1 Optimization 1  
