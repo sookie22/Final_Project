@@ -68,11 +68,11 @@ Precision-Recall Curve
     
 ![image](https://github.com/sookie22/Final_Project/assets/145446182/b7790dda-96bb-49da-b29e-540fa132e521)      
 
-ROC Curve
+  ROC Curve
   
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/8a8df245-4d76-4867-9daf-bcc7847aa21c)   
 
-Precesion-Recall Curve
+  Precesion-Recall Curve
   
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/a0c104c4-8eea-4789-8975-19dd36b7cbf4)    
 
@@ -89,36 +89,39 @@ Precesion-Recall Curve
     While the 87.19% accuracy is promising, it's important to recognize that oversimplified classifications may hinder informed decision-making, potentially affecting industry practices. 
     Thus, we should consider the initial accuracy of 75.31% as a valuable reference point for Decision Tree optimization at this stage.
 
-    ROC Curve
+  ROC Curve
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/738ed564-79ab-4948-a588-5e2b94d958e5)    
 
-    Precision-Recall Curve
+  Precision-Recall Curve
   ![image](https://github.com/sookie22/Final_Project/assets/145446182/af558790-a313-4c4c-a1b8-68e2dfbde3a0)
 
  4.4 Tensoflow neural network   
-     Tensoflow is an open-source machine learning library used for deep learning neural network models. 
-     The target variable y has integer values that represent different categories.
 
-     ![image](https://github.com/sookie22/Final_Project/assets/10916160/a3addbce-d66a-4eee-b74b-a6bbcde3610c)   
+    Tensoflow is an open-source machine learning library used for deep learning neural network models. 
+    The target variable y has integer values that represent different categories.
 
-     This should be converted to a matrix.
-     ![image](https://github.com/sookie22/Final_Project/assets/10916160/15862f4b-b20b-4eff-9b5f-5c6a64988120)  
+![image](https://github.com/sookie22/Final_Project/assets/10916160/a3addbce-d66a-4eee-b74b-a6bbcde3610c)   
 
-     Tensorflow layers are defined as follows.
+This should be converted to a matrix.
 
-     ![image](https://github.com/sookie22/Final_Project/assets/10916160/961f02d6-a449-4242-ac05-7ad6c672909d)  
+![image](https://github.com/sookie22/Final_Project/assets/10916160/15862f4b-b20b-4eff-9b5f-5c6a64988120)  
 
-     Accuracy is 60%
-     ![image](https://github.com/sookie22/Final_Project/assets/10916160/c1d0c013-16b9-4431-9648-607a6f67c83e)  
+Tensorflow layers are defined as follows.
+
+![image](https://github.com/sookie22/Final_Project/assets/10916160/961f02d6-a449-4242-ac05-7ad6c672909d)  
+
+Accuracy is 60%
+![image](https://github.com/sookie22/Final_Project/assets/10916160/c1d0c013-16b9-4431-9648-607a6f67c83e)  
 
 4.4.1 Optimization 1   
-     The loss function is changed to mean squared error.
 
-     ![image](https://github.com/sookie22/Final_Project/assets/10916160/79415653-acdc-4f88-9f69-6510c3a07e78)  
+The loss function is changed to mean squared error.
 
-     Accuracy is reduced to 57.9%
+![image](https://github.com/sookie22/Final_Project/assets/10916160/79415653-acdc-4f88-9f69-6510c3a07e78)  
 
-     ![image](https://github.com/sookie22/Final_Project/assets/10916160/fc597fae-aaba-4b30-8c7d-d90cd5fc3914)  
+Accuracy is reduced to 57.9%
+
+![image](https://github.com/sookie22/Final_Project/assets/10916160/fc597fae-aaba-4b30-8c7d-d90cd5fc3914)  
      
 
 
@@ -127,7 +130,8 @@ Precesion-Recall Curve
 ![image](https://github.com/sookie22/Final_Project/assets/10916160/a0e2ae05-0d64-4761-87f4-0dd752728680)  
 
 ## Conclusion   
-Decision tree with narrow classification has best accuracy followed by Random forest model with gridsearch classifier. 
+Random forest would be the most suitable model to predict wine quality based on a categorization Good and Bad but model should be cross-reference with industry if such classification would be applicable. Take this into consideration, this could be used as a tool for producers to early indicate quality in wine production processes. 
+
 
 
 
