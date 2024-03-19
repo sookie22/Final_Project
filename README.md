@@ -1,10 +1,9 @@
 # Final_Project
+## Presentation deck: https://docs.google.com/presentation/d/1HkYyFTOZlRZ4I7RjwapBqX095envNZ_g/edit#slide=id.p1
 
 ## Dataset
 
-We have selected red wine quality csv dataset from Kaggle.   
-https://www.kaggle.com/datasets/yasserh/wine-quality-dataset    
-
+Source Kaggle - Wine quality: https://www.kaggle.com/datasets/yasserh/wine-quality-dataset
 This dataset contains information about chemical composition of red variants of the Portuguese "Vinho Verde" wine.   
 
 Input variables (based on physicochemical tests):  
@@ -26,25 +25,19 @@ Output variable (based on sensory data):
 Build machine learning model to predict wine quality based on its chemical composition.  
 
 ## Process Overview  
-1. Import packages and import input data into spark db  
-2. Convert spark table to pandas dataframe and data clean-up. Remove any rows with missing value.  
-  2.1 Check bias in the dataset and classifications.    
-  2.2 Check correlations of all features.
-      From this matrix we can see that pH, fixed acidity, citric acid and density are highly correlated.
-      Total sulfur dioxide and free sulfur dioxide and very highly correlated.
-      These highly correlated columns can be used for dimension reduction to fine tune accuracy.  
-   
-   ![image](https://github.com/sookie22/Final_Project/assets/10916160/1d9baa70-d2b1-49e6-85c9-c6400222dcad) 
-   
-
-3. Normalize and standardise dataframe.  
-4. Apply machine learning models.  
+1. Import packages and import input data into spark db  and convert into Panda dataFrame
+2. Data Clean-up  
+  2.1 Check for Null and data type inconsistence
+  2.2 Check bias in the dataset and classifications.    
+  2.3 Run correlation matrix of variables
+   ![image](https://github.com/sookie22/Final_Project/assets/143486132/c867b94a-1724-40dc-9bd1-bb14abc087c5)
+3. Normalize and Standardization - StandardScaler ().  
+4. Machine Learning Models Attempts.  
   4.1 Random forest model.  
       Random forest is very versatilite machine learning model. It can be used for both regression and classification tasks, and it's also easy to view the relative importance it assigns to the input features.
       It has easy-to-understand hyperparameters and classifier doesn't overfit with enough trees.
       Alcohol quality depends on 11 input features. But which features are dominant in deciding wine quality is as follows.  
-
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/82c7c6da-83da-4089-930c-a551c6b33373)
+![image](https://github.com/sookie22/Final_Project/assets/143486132/e6409c01-f0e8-4b48-883b-a55cda72ed59)
 
       This model uses test_size 0.25. The accuracy of this model is 72%  
       ![image](https://github.com/sookie22/Final_Project/assets/10916160/10031233-48d6-41b0-847d-6e99702107e3)  
