@@ -43,12 +43,12 @@ Build machine learning model to predict wine quality based on its chemical compo
       ![image](https://github.com/sookie22/Final_Project/assets/10916160/10031233-48d6-41b0-847d-6e99702107e3)  
 
 
-   4.1.1 Optimization 1  
+   4.1.1 Optimization: Hyper Parameter Tuning using GridSearchCV  
       The test size has been reduced to 0.2. The accuracy has increased to 74%.  
 
       ![image](https://github.com/sookie22/Final_Project/assets/10916160/59c9b8e0-0cc1-42df-9b94-f99b95708f5f)  
 
-   4.1.2 Optimization 2  
+   4.1.2 Optimization:   
       Gridsearch classifier is used to improve the accuracy. GridSearchCV is the process of performing hyperparameter tuning in order to determine the optimal values for a given model.
       Parameter grid for the classifier is defined as follows.   
 
