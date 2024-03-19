@@ -39,44 +39,24 @@ Build machine learning model to predict wine quality based on its chemical compo
       Alcohol quality depends on 11 input features. But which features are dominant in deciding wine quality is as follows.  
 ![image](https://github.com/sookie22/Final_Project/assets/143486132/e6409c01-f0e8-4b48-883b-a55cda72ed59)
 
-      This model uses test_size 0.25. The accuracy of this model is 72%  
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/10031233-48d6-41b0-847d-6e99702107e3)  
-
-
-   4.1.1 Optimization: Hyper Parameter Tuning using GridSearchCV  
-      The test size has been reduced to 0.2. The accuracy has increased to 74%.  
-
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/59c9b8e0-0cc1-42df-9b94-f99b95708f5f)  
-
-   4.1.2 Optimization:   
-      Gridsearch classifier is used to improve the accuracy. GridSearchCV is the process of performing hyperparameter tuning in order to determine the optimal values for a given model.
-      Parameter grid for the classifier is defined as follows.   
-
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/48990eb4-af86-404f-98fa-92436fee3acd)
-
-      Accuracy is significantly improved to 82%.    
+      The Hyper Parameter Tuning using GridSearchCV with test size 0.2  provide a high accuracy of 82%.    
    
       ![image](https://github.com/sookie22/Final_Project/assets/10916160/eafae585-176d-4db5-b8ca-218c01a53f6c)  
 
-   
-  4.2 Linear regression vs. logistic regression 
-    4.2.1 Linear Regression
-      Linear regression is a statistical modeling process that compares the relationship between two variables, which are usually independent or explanatory variables and dependent variables.
-      It is simple to implement and easier to interpret the output coefficients.
-      For the first model, quality has been converted to category type assuming wine quality id good when quality rating is between 6-8 and bad when quality rating is below 6.    
+4.2 Linear regression vs. logistic regression 
+Linear regression is a statistical modeling process that compares the relationship between two variables, which are usually independent or explanatory variables and dependent variables. Logistic regression is a statistical method used for binary classification tasks, where the outcome variable (dependent variable) is categorical with two possible outcomes. As we decide continue models with an evaluation for prediction of all ratings or a categorization in good (6 and above quality rating) and Bad (Below 6 quality rating)
+    4.2.1 Linear Regression            
       R-squared: 0.4032
-      ![image](https://github.com/sookie22/Final_Project/assets/145446182/d28cb3bb-3cd1-475d-9d6c-27bc580822fc)  
- 
-    4.2.2 Optimization: Utilize categorization Good (6 and above) and Bad (below 6)
+    4.2.2 Optimization: Utilize categorization Good (6 and above) and Bad (below 6)- Logistic Regression
       The accuracy of this model is 74%
-  ![image](https://github.com/sookie22/Final_Project/assets/145446182/15ea3b12-1d2b-4b14-ae62-37cc388a7ef5)  
+![image](https://github.com/sookie22/Final_Project/assets/143486132/f072b20d-5ec4-4763-9d48-6116b5e89087)
   
-
       ROC Curve
-  ![image](https://github.com/sookie22/Final_Project/assets/145446182/c876a80d-51d2-4434-8b1f-1cfd8d81164e)   
+![image](https://github.com/sookie22/Final_Project/assets/143486132/f75d1129-7de5-46a6-aaa6-ac01ddb04ff4)
 
       Precision-Recall Curve  
-  ![image](https://github.com/sookie22/Final_Project/assets/145446182/f9e10cf9-083a-4f0c-b2e8-a2ec7a90ef71)   
+![image](https://github.com/sookie22/Final_Project/assets/143486132/e4d79cc9-a9c1-4513-9976-9527e5de84b3)
+
 
   4.3 Decision Tree  
     4.3.1 Optimization: with categorization (Remove the least important feature)
