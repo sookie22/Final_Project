@@ -50,7 +50,7 @@ Linear regression is a statistical modeling process that compares the relationsh
     4.2.2 Optimization: Utilize categorization Good (6 and above) and Bad (below 6)- Logistic Regression
     The accuracy of this model is 74%
 
-    ![image](https://github.com/sookie22/Final_Project/assets/143486132/f072b20d-5ec4-4763-9d48-6116b5e89087)
+![image](https://github.com/sookie22/Final_Project/assets/143486132/f072b20d-5ec4-4763-9d48-6116b5e89087)
   
 ROC Curve
 ![image](https://github.com/sookie22/Final_Project/assets/143486132/f75d1129-7de5-46a6-aaa6-ac01ddb04ff4)
