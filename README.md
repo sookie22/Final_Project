@@ -34,12 +34,16 @@ Build machine learning model to predict wine quality based on its chemical compo
 3. Normalize and Standardization - StandardScaler ().  
 4. Machine Learning Models Attempts.  
   4.1 Random forest model.  
-      Random forest is very versatilite machine learning model. It can be used for both regression and classification tasks, and it's also easy to view the relative importance it assigns to the input features.
-      It has easy-to-understand hyperparameters and classifier doesn't overfit with enough trees.
-      Alcohol quality depends on 11 input features. But which features are dominant in deciding wine quality is as follows.  
+     The Random Forest model is a highly versatile machine learning algorithm known for its adaptability to both regression and classification tasks. One of its key strengths lies in its ability to provide insights into the relative importance assigned to different input features. With straightforward hyperparameters, this model is user-friendly and generally resistant to overfitting when a sufficient number of trees are used.
+   
+In the given dataset, assessing alcohol quality is based on 11 input features. This model enables us to understand which features play the most significant role in determining wine quality.
+ 
 ![image](https://github.com/sookie22/Final_Project/assets/143486132/e6409c01-f0e8-4b48-883b-a55cda72ed59)
 
-      The Hyper Parameter Tuning using GridSearchCV with test size 0.2  provide a high accuracy of 82%.    
+When run without optimization, the model achieves a predictive accuracy of 72% on the test set.
+    
+    ![image](https://github.com/sookie22/Final_Project/assets/144679119/60453c44-12c9-480a-8258-b52194ba0f5d)
+After optimization through Hyperparameter Tuning using GridSearchCV, the model attains its highest score of 80%, with an accuracy reaching 81%.
    
       ![image](https://github.com/sookie22/Final_Project/assets/10916160/eafae585-176d-4db5-b8ca-218c01a53f6c)  
 
