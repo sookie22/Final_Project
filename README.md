@@ -50,8 +50,10 @@ After optimization through Hyperparameter Tuning using GridSearchCV, the model a
 
 ![image](https://github.com/sookie22/Final_Project/assets/144679119/4e749a28-0a68-4b11-a36e-02eeb703f55a)
 
-4.2 Linear regression vs. logistic regression 
+4.2 Linear regression vs. logistic regression
+
 Linear regression is a statistical modeling process that compares the relationship between two variables, which are usually independent or explanatory variables and dependent variables. Logistic regression is a statistical method used for binary classification tasks, where the outcome variable (dependent variable) is categorical with two possible outcomes. As we decide continue models with an evaluation for prediction of all ratings or a categorization in good (6 and above quality rating) and Bad (Below 6 quality rating)
+
     4.2.1 Linear Regression            
       R-squared: 0.4032
     4.2.2 Optimization: Utilize categorization Good (6 and above) and Bad (below 6)- Logistic Regression
