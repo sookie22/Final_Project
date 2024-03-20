@@ -54,10 +54,12 @@ After optimization through Hyperparameter Tuning using GridSearchCV, the model a
 
 Linear regression is a statistical modeling process that compares the relationship between two variables, which are usually independent or explanatory variables and dependent variables. Logistic regression is a statistical method used for binary classification tasks, where the outcome variable (dependent variable) is categorical with two possible outcomes. As we decide continue models with an evaluation for prediction of all ratings or a categorization in good (6 and above quality rating) and Bad (Below 6 quality rating)
 
-    4.2.1 Linear Regression            
-      R-squared: 0.4032
-    4.2.2 Optimization: Utilize categorization Good (6 and above) and Bad (below 6)- Logistic Regression
-    The accuracy of this model is 74%
+4.2.1 Linear Regression            
+R-squared: 0.4032
+
+4.2.2 Optimization: Utilize categorization Good (6 and above) and Bad (below 6)- Logistic Regression
+
+The accuracy of this model is 74%
 
 ![image](https://github.com/sookie22/Final_Project/assets/143486132/f072b20d-5ec4-4763-9d48-6116b5e89087)
   
