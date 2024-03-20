@@ -42,10 +42,13 @@ In the given dataset, assessing alcohol quality is based on 11 input features. T
 
 When run without optimization, the model achieves a predictive accuracy of 72% on the test set.
     
-    ![image](https://github.com/sookie22/Final_Project/assets/144679119/60453c44-12c9-480a-8258-b52194ba0f5d)
+![image](https://github.com/sookie22/Final_Project/assets/144679119/ac026457-6d59-463e-b615-101fbe2a908b)
+
 After optimization through Hyperparameter Tuning using GridSearchCV, the model attains its highest score of 80%, with an accuracy reaching 81%.
    
-      ![image](https://github.com/sookie22/Final_Project/assets/10916160/eafae585-176d-4db5-b8ca-218c01a53f6c)  
+![image](https://github.com/sookie22/Final_Project/assets/144679119/4e17ac0e-23e2-4584-bfda-d3e3ba0863a3)
+
+![image](https://github.com/sookie22/Final_Project/assets/144679119/4e749a28-0a68-4b11-a36e-02eeb703f55a)
 
 4.2 Linear regression vs. logistic regression 
 Linear regression is a statistical modeling process that compares the relationship between two variables, which are usually independent or explanatory variables and dependent variables. Logistic regression is a statistical method used for binary classification tasks, where the outcome variable (dependent variable) is categorical with two possible outcomes. As we decide continue models with an evaluation for prediction of all ratings or a categorization in good (6 and above quality rating) and Bad (Below 6 quality rating)
