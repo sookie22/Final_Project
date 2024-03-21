@@ -131,10 +131,11 @@ The MAE for training data set is 0.5. This means that predicted wine quality can
 
 ## Summary  
 
-![image](https://github.com/sookie22/Final_Project/assets/10916160/a0e2ae05-0d64-4761-87f4-0dd752728680)  
+![image](https://github.com/sookie22/Final_Project/assets/144679119/f81c25e0-01ba-4417-b816-9ee88314d783)
+
 
 ## Conclusion   
-Random forest would be the most suitable model to predict wine quality based on a categorization Good and Bad but model should be cross-reference with industry if such classification would be applicable. Take this into consideration, this could be used as a tool for producers to early indicate quality in wine production processes. 
+Random forest would be the most suitable model to predict wine quality. However, it's crucial to validate the classification process utilised with industry bodies for applicability. 	If applicable, this model offers strategic advantages for wine producers by providing early insights into wine quality. It empowers producers to plan and implement quality control measures effectively, ultimately enhancing production efficiency.
 
 
 
